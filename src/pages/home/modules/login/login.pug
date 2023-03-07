@@ -1,0 +1,15 @@
+include ../../../../components/input/input
+include ../../../../components/button/button
+include ../../../../components/link/link
+
+.login
+ .form-wrapper 
+  h1.login__title Вход
+  form(action="")
+   .login__inputs
+    + input('text','login','Логин','Неверный логин')  
+    + input('password','password','Пароль','Неверный пароль')
+  .login__button 
+   + button('Авторизоваться')
+  .login__link 
+   + link('Впервые?','/signup.html')

@@ -1,0 +1,18 @@
+include ../../components/personLogo/personLogo
+include components/mainInfo/mainInfo
+include ../../components/link/link
+
+.profile 
+ .profile-left 
+  a(href="/") 
+ .profile-content  
+  .profile-content__data 
+   .profile-content__img
+    + personLogo
+   p.profile-content__name Иван
+   .profile-content__main
+    + mainInfo('true')
+   .profile-content__option 
+    + link('Изменить данные','/change.html')
+    + link('Изменить пароль','/changePassword.html')
+    + link('Выйти','/login.html','red')

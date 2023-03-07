@@ -1,0 +1,21 @@
+include ../../components/previewChat/previewChat
+
+.app 
+ .app-sideBar 
+  .app-sideBar__profile 
+    a(href="/profile.html") Профиль
+  .app-sideBar__search 
+    input(type="text" placeholder="Поиск" name="message") 
+  .app-sideBar__list
+    + previewChat('test','Test','test te st stt srtsr tsrtrs trtrst stsrtrs trstrst rstsr tsrtsr trst sr gsd gds g dsg ds gds gds g dsg sd','11:22',4) 
+    + previewChat('test','Test','test te ','11:22')
+    + previewChat('test','Test','test te ','11:22',15)
+    + previewChat('test','Test','test te ','11:22',15)
+    + previewChat('test','Test','test te ','11:22',15)
+    + previewChat('test','Test','test te ','11:22',15)
+    + previewChat('test','Test','test te ','11:22',15)
+    + previewChat('test','Test','test te ','11:22',15)
+    + previewChat('test','Test','test te ','11:22',15)
+    + previewChat('test','Test','test te ','11:22',10)
+ .app-loader 
+  p Выберите чат чтобы отправить сообщение

@@ -1,0 +1,16 @@
+include ../../../../components/personLogo/personLogo
+include ../../components/mainInfo/mainInfo
+include ../../../../components/button/button
+
+.profile 
+ .profile-left 
+  a(href="/profile.html") 
+ .profile-content  
+  .profile-content__data 
+   .profile-content__img
+    + personLogo
+   .profile-content__main
+    + mainInfo('false')
+   .profile-content__option 
+    + button('Сохранить')
+    
