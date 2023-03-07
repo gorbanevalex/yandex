@@ -1,0 +1,10 @@
+include ../infoField/infoField
+
+mixin mainInfo(isDisabled)
+ .mainInfo 
+  + infoField('Почта','mail','email','test@bk.ru',isDisabled)
+  + infoField('Логин','login','text','TestTestovich',isDisabled)
+  + infoField('Имя','first_name','text','Test',isDisabled)
+  + infoField('Фамилия','second_name','text','Testovich',isDisabled)
+  + infoField('Имя в чате','display_name','text','Testovka',isDisabled)
+  + infoField('Телефон','phone','tel','+7 (980) 999-99-99',isDisabled)

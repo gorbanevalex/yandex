@@ -1,0 +1,20 @@
+include ../../../../components/input/input
+include ../../../../components/button/button
+include ../../../../components/link/link
+
+.signup
+ .form-wrapper 
+  h1.signup__title Регистрация
+  form(action="")
+   .signup__inputs
+    + input('email','email','Почта','Неверная почта')  
+    + input('text','login','Логин','Неверный логин')
+    + input('text','first_name','Имя','Неверное имя')
+    + input('text','second_name','Фамилия','Неверная фамилия')
+    + input('tel','phone','Телефон','Неверный телефон')
+    + input('password','password','Пароль','')
+    + input('password','password_test','Пароль (еще раз)','')
+  .signup__button 
+   + button('Создать аккаунт')
+  .signup__link 
+   + link('Войти','/login.html')

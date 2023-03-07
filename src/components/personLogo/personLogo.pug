@@ -1,0 +1,13 @@
+include ../button/button
+
+mixin personLogo()
+ .personLogo.empty 
+  p.personLogo__change Поменять <br> аватар
+ .personLogo-set 
+   .personLogo-set__bg
+   .personLogo-set__body 
+    p.personLogo-set__title Загрузите файл
+    .personLogo-set__input 
+     input(type="file" id='avatar' name='avatar' class="personLogo-set__file")
+     label(for="avatar" class="personLogo-set__label") Выбрать файл на компьютере  
+    + button('Поменять')
