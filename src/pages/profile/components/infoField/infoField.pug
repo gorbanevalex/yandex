@@ -1,0 +1,4 @@
+mixin infoField(label,type,name,value,isDisabled)
+ .infoField(class=isDisabled) 
+  label(for=name) #{label}
+  input(id=name type=type value=value )
